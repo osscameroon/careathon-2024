@@ -1,0 +1,132 @@
+name: Add subscription
+on:
+  issues:
+    types: [ closed ]
+
+concurrency: 'main'
+jobs:
+  add_participant:
+    runs-on: ubuntu-latest
+    if: ${{ contains(github.event.issue.title, '[auto] - Subscription to the careathon') && contains(github.event.issue.labels.*.name,  'valid_submission') }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: stefanbuck/github-issue-parser@v3
+        id: issue-parser
+        with:
+          template-path: .github/ISSUE_TEMPLATE/subscription.yaml
+
+      - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > survey_submission.json
+
+      - run: |
+          cat survey_submission.json | jq
+
+      - name: Set convert json to yaml
+        shell: bash
+        run: |
+          cat survey_submission.json | yq e '{"items": [.]}' -P - > survey_submission.yaml
+
+      - run: cat survey_submission.yaml
+
+      - name: Set convert json to yaml
+        shell: bash
+        run: |
+          yq ea '. as $item ireduce ({}; . *+ $item)' -i ./src/res/survey.yaml survey_submission.yaml
+
+      - run: cat ./src/res/survey.yaml
+
+
+      - name: create a repository template
+        run: |
+          slugify () {
+            echo "$1" | iconv -t ascii//TRANSLIT | sed -r s/[~\^]+//g | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z
+          }
+          TEAM_NAME=$(yq ".items[-1].team_name" < ./src/res/survey.yaml)
+          TEAM_NAME=$(slugify "$TEAM_NAME")
+          USERNAME=$(yq ".items[-1].github_handle" < ./src/res/survey.yaml)
+          PREFIX=careathon-2024
+          if [ ! -z "$TEAM_NAME" ]; then
+            REPONAME=$PREFIX-$TEAM_NAME
+          else
+            REPONAME=$PREFIX-$USERNAME
+          fi
+          echo "REPONAME=$REPONAME" >> $GITHUB_ENV
+          gh api \
+          --method POST \
+          -H "Accept: application/vnd.github+json" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          /repos/osscameroon/test-template/generate \
+          -f "owner=osscameroon" -f "name=$REPONAME" -f "description=This is your first repository" -F "include_all_branches=false" -F "private=true"
+
+          # Add the repository name
+          yq e -i ".items[-1].repository = \"$REPONAME\"" ./src/res/survey.yaml
+
+        env:
+          GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
+
+      - name: Commit changes
+        shell: bash
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
+          git config --global user.name "github-actions[bot]" && \
+          git add ./src/res/survey.yaml && \
+          git commit -m 'new survey answer' && \
+          git push
+
+      - name: add collaborators
+        run: |
+          USERNAME=$(yq ".items[-1].github_handle" < ./src/res/survey.yaml)
+          USERNAME_1=$(yq ".items[-1].contestant_1_handle" < ./src/res/survey.yaml)
+          USERNAME_2=$(yq ".items[-1].contestant_2_handle" < ./src/res/survey.yaml)
+
+          if [ ! -z "$USERNAME" ]; then
+            gh api \
+            --method PUT \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /repos/osscameroon/$REPONAME/collaborators/$USERNAME \
+             -f "permission=push"
+          fi
+
+          if [ ! -z "$USERNAME_1" ]; then
+            gh api \
+            --method PUT \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /repos/osscameroon/$REPONAME/collaborators/$USERNAME_1 \
+             -f "permission=push"
+          fi
+
+          if [ ! -z $USERNAME_2 ]; then
+            gh api \
+            --method PUT \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /repos/osscameroon/$REPONAME/collaborators/$USERNAME_2 \
+             -f "permission=push"
+          fi
+
+        env:
+          GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
+
+      - name: send custom message to the  osscameroon group
+        uses: appleboy/telegram-action@v0.1.1
+        with:
+          to: ${{ secrets.TELEGRAM_CAREATHON_ADMIN_GROUP_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: >
+            A new participant has been approved.
+            ${{ github.event.issue.html_url }}
+
+      - name: Add comment
+        run: |
+          BODY=":sparkles: Your subscription has been approved :sparkles:
+
+            The https://github.com/osscameroon/$REPONAME repository was created, for you. Read the repositories README.md to find out more about the competion."
+
+          gh issue comment "$NUMBER" --body "$BODY"
+
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}

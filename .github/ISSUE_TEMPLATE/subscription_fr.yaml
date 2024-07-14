@@ -1,0 +1,137 @@
+name: Francais - Inscription au careathon 2024
+description: Remplissez ce formulaire pour vous inscrire au careathon 2024
+title: "[auto] - Inscription au careathon 2024"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Remplissez le formulaire ci-dessous pour valider votre inscription au
+        Careathon 2024.
+  - type: input
+    id: github_handle
+    attributes:
+      label:  Quel est votre handle GitHub?
+      description: |
+        Entrez votre handle GitHub, vous le trouverez a la fin de l'url de votre profile  https://github.com/<handle>
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Si vous participez en equipe, fournissez un nom d'equipe, et les handle GitHub des autres participants.
+  - type: input
+    id: team_name
+    attributes:
+      label: Saisissez le nom de votre equipe
+      description:  |
+        Si vous participez en equipe, saisissez votre nom d'equipe.
+  - type: input
+    id: contestant_1_handle
+    attributes:
+      label: Saisissez le handle GitHub du second participant.
+      description:  |
+        Si vous participez en equipe, saisissez le handle GitHub du deuxieme participant.
+    validations:
+      required: true
+  - type: input
+    id: contestant_2_handle
+    attributes:
+      label:  Saisissez le handle GitHub du troisieme participant.
+      description:  |
+        Si vous participez en equipe, saisissez le handle GitHub du troisieme participant.
+    validations:
+      required: true
+  - type: dropdown
+    id: city
+    attributes:
+      label: Dans quelle ville vivez vous?
+      options:
+        - Other
+        - Douala
+        - Yaoundé
+        - Garoua
+        - Bamenda
+        - Maroua
+        - Nkongsamba
+        - Bafoussam
+        - Ngaoundéré
+        - Bertoua
+        - Loum
+        - Kumba
+        - Edéa
+        - Kumbo
+        - Foumban
+        - Mbouda
+        - Dschang
+        - Limbé
+        - Ebolowa
+        - Kousséri
+        - Guider
+        - Meiganga
+        - Yagoua
+        - Mbalmayo
+        - Bafang
+        - Tiko
+        - Bafia
+        - Wum
+        - Kribi
+        - Buea
+        - Sangmélima
+        - Foumbot
+        - Bangangté
+        - Batouri
+        - Banyo
+        - Nkambé
+        - Bali
+        - Mbanga
+        - Mokolo
+        - Melong
+        - Manjo
+        - Garoua-Boulaï
+        - Mora
+        - Kaélé
+        - Tibati
+        - Ndop
+        - Akonolinga
+        - Eséka
+        - Mamfé
+        - Obala
+        - Muyuka
+        - Nanga-Eboko
+        - Abong-Mbang
+        - Fundong
+        - Nkoteng
+        - Fontem
+        - Mbandjock
+        - Touboro
+        - Ngaoundal
+        - Yokadouma
+        - Pitoa
+        - Tombel
+        - Kékem
+        - Magba
+        - Bélabo
+        - Tonga
+        - Maga
+        - Koutaba
+        - Blangoua
+        - Guidiguis
+        - Bogo
+        - Batibo
+        - Yabassi
+        - Figuil
+        - Makénéné
+        - Gazawa
+        - Tcholliré
+  - type: input
+    id: other_city
+    attributes:
+      label: Si vous vivez dans une autre ville, saisissez la ville dans laquelle vous vivez.
+  - type: input
+    id: other_country
+    attributes:
+      label: Si vouz vivez hors du Cameroun, saisissez le Pays dans lequel vous vivez.
+  - type: input
+    id: free_comment
+    attributes:
+      label: "Avez vous quelque chose à nous dire concernant les raisons de votre participation à ce Careathon ?"

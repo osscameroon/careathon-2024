@@ -1,0 +1,46 @@
+name: Process survey's entry
+on:
+  issues:
+    types: [ opened ]
+
+concurrency: 'main'
+jobs:
+  take_survey:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, '[auto] - Inscription au careathon')
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - uses: stefanbuck/github-issue-parser@v3
+        id: issue-parser
+        with:
+          template-path: .github/ISSUE_TEMPLATE/subscription_fr.yaml
+
+      - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > survey_submission.json
+
+      - run: |
+          cat survey_submission.json | jq
+
+      - name: send custom message to the  osscameroon group
+        uses: appleboy/telegram-action@v0.1.1
+        with:
+          to: ${{ secrets.TELEGRAM_CAREATHON_ADMIN_GROUP_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: >
+            A new subscription was submitted on the issue bellow, please review the subscription in 48 hours.
+            ${{ github.event.issue.html_url }}
+
+      - name: Add comment
+        run: gh issue comment "$NUMBER" --body "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          BODY: >
+            :sparkles: Thanks for submitting your application. :sparkles:
+
+            Your application will be reviewed in 48 hours.
