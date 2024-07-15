@@ -26,3 +26,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-un-autre-groupe
+  - github_handle: elhmn
+    team_name: meilleur equipe
+    contestant_1_handle: rakici
+    contestant_2_handle: bw-bmbarga
+    city: Ebolowa
+    other_city: df
+    other_country: ""
+    free_comment: ""
+    repository: careathon-2024-meilleur-equipe
