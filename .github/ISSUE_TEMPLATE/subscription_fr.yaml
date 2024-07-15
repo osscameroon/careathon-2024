@@ -46,7 +46,6 @@ body:
     attributes:
       label: Dans quelle ville vivez vous?
       options:
-        - Other
         - Douala
         - Yaoundé
         - Garoua
