@@ -123,8 +123,6 @@ jobs:
             Le repertoire https://github.com/osscameroon/$REPONAME a été créé pour vous. Lisez son README.md pour en savoir plus sur la compétition."
 
           gh issue comment "$NUMBER" --body "$BODY"
-          gh issue comment "$NUMBER" --body "$BODY"
-
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
