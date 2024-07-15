@@ -35,3 +35,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-meilleur-equipe
+  - github_handle: elhmn
+    team_name: nouveau groupe lol
+    contestant_1_handle: rakici
+    contestant_2_handle: bw-bmbarga
+    city: Guider
+    other_city: df
+    other_country: ""
+    free_comment: ""
+    repository: careathon-2024-nouveau-groupe-lol
