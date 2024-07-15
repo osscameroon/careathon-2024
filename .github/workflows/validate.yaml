@@ -3,7 +3,6 @@ on:
   issues:
     types: [ closed ]
 
-concurrency: 'main'
 jobs:
   add_participant:
     runs-on: ubuntu-latest

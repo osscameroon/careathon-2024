@@ -3,7 +3,6 @@ on:
   issues:
     types: [ opened ]
 
-concurrency: 'main'
 jobs:
   take_survey:
     runs-on: ubuntu-latest
