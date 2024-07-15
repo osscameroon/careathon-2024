@@ -38,7 +38,7 @@ The subscriptions are done by openening an issue on this repository. The issue s
 
 Once your issue is created, we will review your subscription and get back to you with the next steps.
 
-You may need to join the osscameroon group on [telegram]() to get updates on the competition.
+You may need to join the osscameroon group on [telegram](https://t.me/+UpKZh_KXTaTx7JD7) to get updates on the competition.
 
 ## How to submit your project?
 
@@ -76,4 +76,4 @@ No, you can't use third-party APIs. You must build your project from scratch.
 
 ## If you have any questions
 
-If you have any questions, feel free to ask them in the [issues]() section of this repository or on the osscameroon telegram group.
+If you have any questions, feel free to ask them in the [issues](https://github.com/osscameroon/careathon-2024/issues) section of this repository or on the osscameroon [telegram group](https://t.me/+UpKZh_KXTaTx7JD7).
