@@ -17,3 +17,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-un-autre-groupe
+  - github_handle: elhmn
+    team_name: un autre groupe
+    contestant_1_handle: rakici
+    contestant_2_handle: bw-bmbarga
+    city: Douala
+    other_city: df
+    other_country: ""
+    free_comment: ""
+    repository: careathon-2024-un-autre-groupe
