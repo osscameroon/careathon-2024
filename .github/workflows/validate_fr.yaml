@@ -117,10 +117,12 @@ jobs:
 
       - name: Add comment
         run: |
-          BODY=":sparkles: Your subscription has been approved :sparkles:
 
-            The https://github.com/osscameroon/$REPONAME repository was created, for you. Read the repositories README.md to find out more about the competion."
+          BODY=":sparkles: Votre inscription a été approuvé :sparkles:
 
+            Le repertoire https://github.com/osscameroon/$REPONAME a été créé pour vous. Lisez son README.md pour en savoir plus sur la compétition."
+
+          gh issue comment "$NUMBER" --body "$BODY"
           gh issue comment "$NUMBER" --body "$BODY"
 
         env:

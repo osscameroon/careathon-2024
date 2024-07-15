@@ -40,6 +40,6 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
-            :sparkles: Thanks for submitting your application. :sparkles:
+            :sparkles: Merci d'avoir soumis votre candidature. :sparkles:
 
-            Your application will be reviewed in 48 hours.
+            Votre candidature sera examinée sous 24h.

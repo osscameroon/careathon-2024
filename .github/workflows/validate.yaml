@@ -119,7 +119,7 @@ jobs:
 
       - name: Add comment
         run: |
-          BODY=":sparkles: Your subscription has been approved :sparkles:
+          BODY=":sparkles: Your application has been approved :sparkles:
 
             The https://github.com/osscameroon/$REPONAME repository was created, for you. Read the repositories README.md to find out more about the competion."
 
