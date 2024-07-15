@@ -1,7 +1,7 @@
 # careathon-2024
 
 The Careathon is an online Competition organized by [Oss Cameroon](https://osscameroon.com) and [LOHCE](https://www.lohce.com).
-It is the opportunity for Cameroonian developers to showcase their skills and creativity in the development of innovative solutions that can help improve Cameroonian citizen's life.
+It is the opportunity for Cameroonian developers to showcase their skills and creativity in the development of innovative solutions that can help improve the life of Cameroonian citizens.
 
 TODO: Add link to the french version
 
