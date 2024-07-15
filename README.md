@@ -162,10 +162,14 @@ Vous pouvez utiliser des projets open source tant que vous respectez leurs licen
 
 No, you can't use third-party APIs. You must build your project from scratch.
 
+You can use external APIs only if stated otherwise in the subject.
+
 <Details>
 <Summary> Traduction en Francais</Summary>
 
 Non, vous ne pouvez pas utiliser d'API tierces. Vous devez construire votre projet à partir de zéro.
+
+Vous pouvez utiliser des APIs externes uniquement si cela est spécifié dans le sujet.
 
 </Details>
 
