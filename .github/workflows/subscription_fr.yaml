@@ -30,7 +30,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_CAREATHON_ADMIN_GROUP_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           message: >
-            A new subscription was submitted on the issue bellow, please review the subscription in 48 hours.
+            A new subscription was submitted on the issue bellow, please review the subscription in 24 hours.
             ${{ github.event.issue.html_url }}
 
       - name: Add comment
