@@ -17,7 +17,7 @@ C'est l'occasion pour les développeurs camerounais de montrer leurs compétence
 The careathon will be held from the 19th of July 2024, to the 4th of August 2024.
 
 The calendar will be as follows:
-- 19th July 2024: Subscriptions open
+- 17th July 2024: Subscriptions open
 - 27th July 2024: Subscriptions close
 - 29th July 2024: Beginning of the competition
 - 4th August 2024: End of the competition
@@ -183,3 +183,16 @@ If you have any questions, feel free to ask them in the [issues](https://github.
 Si vous avez des questions, n'hésitez pas à les poser dans la section [issues](https://github.com/osscameroon/careathon-2024/issues) de ce dépôt ou sur le groupe [telegram d'osscameroon](https://t.me/+UpKZh_KXTaTx7JD7).
 
 </Details>
+
+## Sponsors
+
+The Careathon is sponsored by:
+
+- [Oss Cameroon](https://osscameroon.com)
+- [LOHCE](https://www.lohce.com)
+- [Genuka](https://genuka.com/)
+- [Jangolo](https://www.jangolo.cm/)
+- [Ejara](https://ejara.io)
+- [Peef](https://peef.dev/)
+- [Paysika](https://paysika.co/en/)
+- [Le brunch techies](x.com/lebrunchtechies)
