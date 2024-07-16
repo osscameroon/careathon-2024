@@ -17,3 +17,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-meilleur-equipe
+  - github_handle: elhmn
+    team_name: meilleur equipe 007
+    contestant_1_handle: rakici
+    contestant_2_handle: bw-bmbarga
+    city: Buea
+    other_city: ""
+    other_country: ""
+    free_comment: all good
+    repository: careathon-2024-meilleur-equipe-007
