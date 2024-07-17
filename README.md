@@ -64,8 +64,8 @@ You can participate in the Careathon as a single participant or as a team of 2 t
 
 The subscriptions are done by openening an issue on this repository. The issue should be created using one of the 2 provided templates:
 
-- [Subscription in english](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription.yaml&title=%5Bauto%5D+-+Subscription+to+the+careathon+2024)
-- [Subscription in french](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription_fr.yaml&title=%5Bauto%5D+-+Inscription+au+careathon+2024)
+- [Subscription in english](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription.yaml&title=%5Bauto%5D+-+Subscription+to+the+careathon+2024+-+%5BDon%27t+edit+this+title%5D)
+- [Subscription in french](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription_fr.yaml&title=%5Bauto%5D+-+Inscription+au+careathon+2024+-+%5BNe+modifiez+pas+ce+titre%5D)
 
 Note: Do not edit the issue title.
 
@@ -80,8 +80,8 @@ Vous pouvez participer au Careathon en tant que participant unique ou en équipe
 
 Les inscriptions se font en ouvrant une issue sur ce dépôt. L'issue doit être créée en utilisant l'un des 2 modèles fournis:
 
-- [Inscription en anglais](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription.yaml&title=%5Bauto%5D+-+Subscription+to+the+careathon+2024)
-- [Inscription en français](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription_fr.yaml&title=%5Bauto%5D+-+Inscription+au+careathon+2024)
+- [Inscription en anglais](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription.yaml&title=%5Bauto%5D+-+Subscription+to+the+careathon+2024+-+%5BDon%27t+edit+this+title%5D)
+- [Inscription en français](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription_fr.yaml&title=%5Bauto%5D+-+Inscription+au+careathon+2024+-+%5BNe+modifiez+pas+ce+titre%5D)
 
 Note: Ne modifiez pas le titre de l'issue.
 
