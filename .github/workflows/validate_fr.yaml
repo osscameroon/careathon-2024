@@ -122,7 +122,7 @@ jobs:
 
             Le repertoire https://github.com/osscameroon/$REPONAME a été créé pour vous. Lisez son README.md pour en savoir plus sur la compétition.
 
-            Si vous n'avez pas acces a ce depot, verifiez vos mails et notifications GitHub. Nous vous avons invite a collaborer sur ce reperrtoire.
+            Si vous n'avez pas acces a ce depot, verifiez vos mails et notifications GitHub. Nous vous avons invite a collaborer sur ce repertoire.
             "
 
           gh issue comment "$NUMBER" --body "$BODY"
