@@ -1,6 +1,6 @@
 name: Subscription to the careathon 2024
 description: Please fill in this form to subscribe to the careathon 2024
-title: "[auto] - Subscription to the careathon 2024"
+title: "[auto] - Subscription to the careathon 2024 - [Don't edit this title]"
 body:
   - type: markdown
     attributes:
