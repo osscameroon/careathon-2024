@@ -121,6 +121,7 @@ jobs:
           BODY=":sparkles: Votre inscription a été approuvé :sparkles:
 
             Le repertoire https://github.com/osscameroon/$REPONAME a été créé pour vous. Lisez son README.md pour en savoir plus sur la compétition.
+
             Si vous n'avez pas acces a ce depot, verifiez vos mails et notifications GitHub. Nous vous avons invite a collaborer sur ce reperrtoire.
             "
 
