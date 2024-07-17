@@ -1,6 +1,6 @@
 name: Francais - Inscription au careathon 2024
 description: Remplissez ce formulaire pour vous inscrire au careathon 2024
-title: "[auto] - Inscription au careathon 2024"
+title: "[auto] - Inscription au careathon 2024 - [Ne modifiez pas ce titre]"
 body:
   - type: markdown
     attributes:
