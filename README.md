@@ -67,6 +67,8 @@ The subscriptions are done by openening an issue on this repository. The issue s
 - [Subscription in english](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription.yaml&title=%5Bauto%5D+-+Subscription+to+the+careathon+2024)
 - [Subscription in french](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription_fr.yaml&title=%5Bauto%5D+-+Inscription+au+careathon+2024)
 
+Note: Do not edit the issue title.
+
 Once your issue is created, we will review your subscription and get back to you with the next steps.
 
 You may need to join the osscameroon group on [telegram](https://t.me/+UpKZh_KXTaTx7JD7) to get updates on the competition.
@@ -80,6 +82,8 @@ Les inscriptions se font en ouvrant une issue sur ce dépôt. L'issue doit être
 
 - [Inscription en anglais](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription.yaml&title=%5Bauto%5D+-+Subscription+to+the+careathon+2024)
 - [Inscription en français](https://github.com/osscameroon/careathon-2024/issues/new?assignees=&labels=&projects=&template=subscription_fr.yaml&title=%5Bauto%5D+-+Inscription+au+careathon+2024)
+
+Note: Ne modifiez pas le titre de l'issue.
 
 Une fois votre issue créée, nous examinerons votre inscription et vous reviendrons avec les prochaines étapes.
 
