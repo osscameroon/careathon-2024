@@ -53,3 +53,12 @@ items:
     other_country: ""
     free_comment: "No"
     repository: careathon-2024-HanslettTheDev
+  - github_handle: ChristianLudovic
+    team_name: La 8e Brigade
+    contestant_1_handle: concepteur19
+    contestant_2_handle: ""
+    city: None
+    other_city: ""
+    other_country: ""
+    free_comment: ""
+    repository: careathon-2024-la-8e-brigade
