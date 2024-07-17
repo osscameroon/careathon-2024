@@ -80,3 +80,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-KSI-EESTI
+  - github_handle: Figeral
+    team_name: ""
+    contestant_1_handle: ""
+    contestant_2_handle: ""
+    city: Douala
+    other_city: ""
+    other_country: ""
+    free_comment: first participation .
+    repository: careathon-2024-Figeral
