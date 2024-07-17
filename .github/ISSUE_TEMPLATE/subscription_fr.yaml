@@ -31,16 +31,12 @@ body:
       label: Saisissez le handle GitHub du second participant.
       description:  |
         Si vous participez en equipe, saisissez le handle GitHub du deuxieme participant. Sinon laissez ce champ vide.
-    validations:
-      required: true
   - type: input
     id: contestant_2_handle
     attributes:
       label:  Saisissez le handle GitHub du troisieme participant.
       description:  |
         Si vous participez en equipe, saisissez le handle GitHub du troisieme participant. Sinon laissez ce champ vide.
-    validations:
-      required: true
   - type: markdown
     attributes:
       value: |
