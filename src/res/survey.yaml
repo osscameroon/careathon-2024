@@ -26,3 +26,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-baedyl
+  - github_handle: bomsTechnology
+    team_name: ""
+    contestant_1_handle: ""
+    contestant_2_handle: ""
+    city: None
+    other_city: Calgary
+    other_country: Canada
+    free_comment: "Impatient de collaborer et d apprendre des grands frères \U0001F60A"
+    repository: careathon-2024-bomsTechnology
