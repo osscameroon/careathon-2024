@@ -18,19 +18,19 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Si vous participez en equipe, fournissez un nom d'equipe, et les handle GitHub des autres participants.
+        ## Si vous participez en equipe, fournissez un nom d'equipe, et les handle GitHub des autres participants. Sinon sautez cette section.
   - type: input
     id: team_name
     attributes:
       label: Saisissez le nom de votre equipe
       description:  |
-        Si vous participez en equipe, saisissez votre nom d'equipe.
+        Si vous participez en equipe, saisissez votre nom d'equipe. Sinon laissez ce champ vide.
   - type: input
     id: contestant_1_handle
     attributes:
       label: Saisissez le handle GitHub du second participant.
       description:  |
-        Si vous participez en equipe, saisissez le handle GitHub du deuxieme participant.
+        Si vous participez en equipe, saisissez le handle GitHub du deuxieme participant. Sinon laissez ce champ vide.
     validations:
       required: true
   - type: input
@@ -38,9 +38,13 @@ body:
     attributes:
       label:  Saisissez le handle GitHub du troisieme participant.
       description:  |
-        Si vous participez en equipe, saisissez le handle GitHub du troisieme participant.
+        Si vous participez en equipe, saisissez le handle GitHub du troisieme participant. Sinon laissez ce champ vide.
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Informations supplementaires
   - type: dropdown
     id: city
     attributes:

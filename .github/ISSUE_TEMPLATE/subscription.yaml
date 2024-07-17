@@ -18,19 +18,19 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## If you compete as a team, provide the name of your team, and the GitHub handle of the other participants.
+        ## If you compete as a team, provide the name of your team, and the GitHub handle of the other participants. Skip that section otherwise.
   - type: input
     id: team_name
     attributes:
       label: What is the name of your team
       description: |
-        If you compete as a team, choose the name of your team.
+        If you compete as a team, choose the name of your team. Leave that field empty otherwise.
   - type: input
     id: contestant_1_handle
     attributes:
       label:  What is the GitHub handle of the second contestant ?
       description: |
-        If you compete as a team, provide us the GitHub handle of the second contestant ?
+        If you compete as a team, provide us the GitHub handle of the second contestant. Leave that field empty otherwise.
     validations:
       required: true
   - type: input
@@ -38,9 +38,13 @@ body:
     attributes:
       label:  What is the GitHub handle of the third contestant ?
       description:  |
-        If you compete as a team, provide us the GitHub handle of the third contestant ?
+        If you compete as a team, provide us the GitHub handle of the third contestant. Leave that field empty otherwise.
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional informations
   - type: dropdown
     id: city
     attributes:
