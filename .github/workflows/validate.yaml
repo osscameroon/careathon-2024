@@ -121,7 +121,7 @@ jobs:
         run: |
           BODY=":sparkles: Your application has been approved :sparkles:
 
-            The https://github.com/osscameroon/$REPONAME repository was created, for you. Read the repositories README.md to find out more about the competion.
+            The https://github.com/osscameroon/$REPONAME repository was created, for you. Read the repository's README.md to find out more about the competion.
 
             If you don't have access to this repository, please check your emails and GitHub notifications. We invited you and your team mates to this repository.
             "
