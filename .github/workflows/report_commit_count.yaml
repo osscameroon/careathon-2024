@@ -12,6 +12,7 @@ jobs:
       - name: Print report
         run: |
           cd ./src
+          git config --global url."https://${{ secrets.ORG_ADMIN_TOKEN }}@github".insteadOf https://github
 
           ./report_commit_count.sh > ../commit_count
 
