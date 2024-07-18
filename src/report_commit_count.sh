@@ -25,5 +25,5 @@ cd ..
 rm -rf $tmp_dir
 
 echo "Participant commit count"
-column -t <<< cat $LOG_FILE | tee $LOG_FILE
+column -t <<< cat $LOG_FILE > $LOG_FILE
 sort -n -t ">" -k2 -r $LOG_FILE
