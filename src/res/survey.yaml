@@ -134,3 +134,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-carepulse
+  - github_handle: Nguemoue
+    team_name: LucDev
+    contestant_1_handle: ""
+    contestant_2_handle: ""
+    city: Yaoundé
+    other_city: ""
+    other_country: ""
+    free_comment: Pour jauger mes capacités de creative
+    repository: careathon-2024-lucdev
