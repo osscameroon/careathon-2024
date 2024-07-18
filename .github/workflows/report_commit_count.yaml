@@ -1,4 +1,4 @@
-name: Send competition subject
+name: Report commit count
 on:
   workflow_dispatch:
 
