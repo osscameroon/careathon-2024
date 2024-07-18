@@ -3,6 +3,7 @@
 FILE=$(readlink -f ./res/survey.yaml)
 DIR=$(dirname $FILE)
 LOG_FILE=$DIR/commit_count.txt
+OUTPUT_FILE=$DIR/output.txt
 
 rm -f $LOG_FILE
 touch $LOG_FILE
@@ -25,5 +26,5 @@ cd ..
 rm -rf $tmp_dir
 
 echo "Participant commit count"
-column -t <<< cat $LOG_FILE > $LOG_FILE
-sort -n -t ">" -k2 -r $LOG_FILE
+column -t <<< cat $LOG_FILE > $OUTPUT_FILE
+sort -n -t ">" -k2 -r $OUTPUT_FILE
