@@ -16,13 +16,8 @@ for e in $(seq 0 $(($len - 1))); do
 
     git clone --single-branch --branch main https://github.com/osscameroon/$repo > /dev/null 2>&1
     cd $repo
-    echo -e "Count: $(git rev-list --count main), \c" >> $LOG_FILE
-    if [ ! -z "$team" ]; then
-        echo -e "team: $team, \c">> $LOG_FILE
-    elif [ ! -z "$handle" ]; then
-        echo -e "handle: $handle, \c">> $LOG_FILE
-    fi
-    echo -e "repo: $repo">> $LOG_FILE
+    echo -e "${repo#careathon-2024-} \c">> $LOG_FILE
+    echo -e "-> $(git rev-list --count main)" >> $LOG_FILE
 
     cd ..
 done
@@ -30,4 +25,5 @@ cd ..
 rm -rf $tmp_dir
 
 echo "Participant commit count"
-sort -n -k2 -r $LOG_FILE
+column -t <<< cat $LOG_FILE | tee $LOG_FILE
+sort -n -t ">" -k2 -r $LOG_FILE
