@@ -139,6 +139,8 @@ Nous vous recommandons mais ne vous obligeons pas à utiliser les technologies s
 
 - Docker/Docker compose, pour containeriser votre application.
 
+</Details>
+
 ## Can I use existing projects? (Puis-je utiliser des projets existants?)
 
 You can't use existing projects for the competition. The code you submit must be written during the competition.
