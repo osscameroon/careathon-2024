@@ -21,4 +21,5 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_CAREATHON_ADMIN_GROUP_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          format: MarkdownV2
           message_file: ./commit_count
