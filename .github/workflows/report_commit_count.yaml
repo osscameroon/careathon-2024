@@ -1,0 +1,22 @@
+name: Send competition subject
+on:
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Print report
+        run: |
+          cd ./src
+          ./report_commit_count.sh > ../commit_count
+
+      - name: report commit count
+        uses: appleboy/telegram-action@v0.1.1
+        with:
+          to: ${{ secrets.TELEGRAM_CAREATHON_ADMIN_GROUP_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message_file: ./commit_count
