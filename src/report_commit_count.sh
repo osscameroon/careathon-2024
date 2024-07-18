@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 FILE=$(readlink -f ./res/survey.yaml)
 DIR=$(dirname $FILE)
