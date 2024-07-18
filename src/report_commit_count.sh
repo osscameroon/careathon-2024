@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 FILE=$(readlink -f ./res/survey.yaml)
 DIR=$(dirname $FILE)
@@ -15,7 +14,7 @@ for e in $(seq 0 $(($len - 1))); do
     team=$(yq eval ".items[$e].team_name" $FILE)
     handle=$(yq eval ".items[$e].github_handle" $FILE)
 
-    git clone --single-branch --branch main https://github.com/osscameroon/$repo
+    git clone --single-branch --branch main https://github.com/osscameroon/$repo > /dev/null 2>&1
     cd $repo
     echo -e "Count: $(git rev-list --count main), \c" >> $LOG_FILE
     if [ ! -z "$team" ]; then
