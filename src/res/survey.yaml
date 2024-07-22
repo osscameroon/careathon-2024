@@ -242,3 +242,12 @@ items:
     other_country: ""
     free_comment: Will be incredible for my team to participate and get more skills
     repository: careathon-2024-jpteks
+  - github_handle: dev-scott
+    team_name: The Eagles
+    contestant_1_handle: artemesian
+    contestant_2_handle: ""
+    city: Douala
+    other_city: ""
+    other_country: ""
+    free_comment: ""
+    repository: careathon-2024-the-eagles
