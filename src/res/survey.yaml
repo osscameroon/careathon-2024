@@ -287,3 +287,12 @@ items:
     other_country: ""
     free_comment: I will like to know more about the projects section, are we going to be assigned projects or we choose ourselves and also base on what do we choose a project?
     repository: careathon-2024-team-mir
+  - github_handle: Navy-sama
+    team_name: Dev Verse
+    contestant_1_handle: AxelleK-S
+    contestant_2_handle: VYoungui
+    city: Douala
+    other_city: ""
+    other_country: ""
+    free_comment: ""
+    repository: careathon-2024-dev-verse
