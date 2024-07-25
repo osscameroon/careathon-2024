@@ -260,3 +260,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-celarinedaleu
+  - github_handle: david123mbah
+    team_name: HealthTech
+    contestant_1_handle: Vs-coder237
+    contestant_2_handle: ""
+    city: Yaoundé
+    other_city: ""
+    other_country: ""
+    free_comment: ""
+    repository: careathon-2024-healthtech
