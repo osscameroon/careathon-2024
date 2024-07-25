@@ -278,3 +278,12 @@ items:
     other_country: ""
     free_comment: Our third member lives outside of Cameroon.
     repository: careathon-2024-exars2025
+  - github_handle: Messi002
+    team_name: Team MIR
+    contestant_1_handle: EdiEdison
+    contestant_2_handle: ""
+    city: Buea
+    other_city: ""
+    other_country: ""
+    free_comment: I will like to know more about the projects section, are we going to be assigned projects or we choose ourselves and also base on what do we choose a project?
+    repository: careathon-2024-team-mir
