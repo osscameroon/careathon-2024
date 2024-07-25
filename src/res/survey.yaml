@@ -269,3 +269,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-healthtech
+  - github_handle: noumendarryl
+    team_name: EXARS2025
+    contestant_1_handle: sikatikenmogne
+    contestant_2_handle: Paul-HenryN
+    city: Douala
+    other_city: ""
+    other_country: ""
+    free_comment: Our third member lives outside of Cameroon.
+    repository: careathon-2024-exars2025
