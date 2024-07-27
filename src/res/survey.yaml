@@ -341,3 +341,12 @@ items:
     other_country: ""
     free_comment: ""
     repository: careathon-2024-AndyP261
+  - github_handle: hdcode
+    team_name: ""
+    contestant_1_handle: ""
+    contestant_2_handle: ""
+    city: Bafoussam
+    other_city: ""
+    other_country: ""
+    free_comment: ""
+    repository: careathon-2024-hdcode
