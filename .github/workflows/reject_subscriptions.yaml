@@ -24,7 +24,7 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             /repos/osscameroon/careathon-2024/issues/$ISSUE_NUMBER \
-            "state=closed" -f "labels[]=registration_closed"
+            -f "state=closed" -f "labels[]=registration_closed"
         env:
           GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
