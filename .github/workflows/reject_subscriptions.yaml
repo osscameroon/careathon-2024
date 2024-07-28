@@ -26,5 +26,5 @@ jobs:
             /repos/osscameroon/careathon-2024/issues/$ISSUE_NUMBER \
             "state=closed" -f "labels[]=registration_closed"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
