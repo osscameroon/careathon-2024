@@ -201,4 +201,4 @@ The Careathon is sponsored by:
 - [Ejara](https://ejara.io)
 - [Peef](https://peef.dev/)
 - [Paysika](https://paysika.co/en/)
-- [Le brunch techies](x.com/lebrunchtechies)
+- [Le brunch techies](https://x.com/lebrunchtechies)
